@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff; /* Белый фон */
+  color: #000000; /* Черный текст */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%; /* Занимает всю ширину */
+  height: auto; /* Автоматическая высота */
+  padding: 40px 20px 20px; /* Увеличен верхний отступ до 40px */
+  background-color: #f9f9f9; /* Светло-серый фон для контейнера */
+  border: 1px solid #ccc; /* Светло-серый бордер */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Максимальная ширина для больших экранов */
+  margin: auto; /* Центрирование контейнера */
+}
+
+h1, h2, h3 {
+  color: #000000; /* Черный цвет заголовков */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #000000; /* Черная линия под заголовком */
+  padding-bottom: 5px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff; /* Белый фон для секций */
+  border: 1px solid #ddd; /* Светло-серый бордер */
+  border-radius: 5px;
+}
+
+section p {
+  margin: 5px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #000000; /* Черный фон для кнопки */
+  color: #ffffff; /* Белый текст */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #444444; /* Темно-серый при наведении */
+}
+
+/* Адаптивные стили */
+@media (max-width: 600px) {
+  .container {
+    padding: 40px 15px 15px; /* Увеличен верхний отступ на мобильных устройствах */
+  }
+
+  h1 {
+    font-size: 24px; /* Уменьшение размера заголовка на мобильных */
+  }
+
+  h2 {
+    font-size: 20px; /* Уменьшение размера заголовков секций */
+  }
+
+  p {
+    font-size: 14px; /* Уменьшение размера текста для лучшего чтения */
+  }
+
+  button {
+    width: 100%; /* Кнопка на всю ширину */
+  }
+}
